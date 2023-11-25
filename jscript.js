@@ -5,8 +5,6 @@ const passwordInput = document.getElementById('password');
 const confirmInput = document.getElementById('confirm');
 const errorMessage = document.getElementById('errorMessage');
 
-
-
 formElement.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -15,7 +13,7 @@ formElement.addEventListener('submit', function (event) {
     const password = passwordInput.value;
     const confirm = confirmInput.value;
 
-    if (name && email && password && password === confirm) {
+    if (name !== '' && email !== '' && password !== '' && password === confirm) {
         const accessToken = generateAccessToken();
 
         const userData = {
@@ -29,28 +27,15 @@ formElement.addEventListener('submit', function (event) {
 
         window.location.href = 'profile.html';
     } else {
-
-        document.getElementById('errorMessage').style.display = 'block';
+        errorMessage.style.display = 'block';
     }
-
 });
 
 
-formElement.addEventListener("click", validateForm);
-function validateForm() {
-    const name = nameInput.value;
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    const confirm = confirmInput.value;
 
-    if (name === '' || email === '' || password === '' || confirm === '') {
-        errorMessage.style.display = 'block';
-        return false;
-    } else {
-        errorMessage.style.display = 'none';
-        return true;
-    }
-}
+
+
+
 
 const generateAccessToken = () => {
     const tokenLength = 16;
