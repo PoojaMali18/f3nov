@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            background-color: #f8fafc;
+            padding: 0px;
+            background-image: url("nim.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        .back {
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: transparent;
+        }
+
+        .mainbox {
+            margin: 20px;
+            padding: 20px;
+            width: 40vw;
+            height: 70vh;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="back">
+        <div class="box">
+            <div class="mainbox">
+                <p class="success">
+                    signup Successfull..!
+                </p>
+                <p class="profile">Profile</p>
+                <div class="container">
+
+                    <div class="circle"><img src="sun.png">
+                    </div>
+                </div>
+                <div class="container">
+                    <div><img src="Vector.png">
+                    </div>
+                </div>
+                <div class="container1">
+                    <div>Your Name: <span id="profileName"></span></div>
+                </div>
+                <div class="container1">
+                    <div>Your Email: <span id="profileEmail"></span></div>
+                </div>
+                <div class="container1">
+                    <div>Your Token: <span id="profileToken"></span></div>
+                </div>
+                <div class="container1">
+                    <div>Your Password: <span id="profilePassword"></span></div>
+                </div>
+                <div class="form-group container ">
+                    <input type="submit" class="logout" value="LOG OUT">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="profilescript.js"></script>
+</body>:
+
+</html>

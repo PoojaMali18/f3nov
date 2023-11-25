@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            background-color: #f8fafc;
+            padding: 0px;
+            background-image: url("bn.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        .back {
+            bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: transparent;
+        }
+
+        .mainbox {
+            margin: 20px;
+            padding: 20px;
+            width: 40vw;
+            height: 70vh;
+            background-color: white;
+        }
+
+        .sign {
+            font-family: Calibri;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="back">
+        <div class="box">
+            <div class="mainbox">
+                <p style="color: #757575">Welcome back! 👋</p>
+                <p class="sign">Sign up to your account</p>
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Your email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"> Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm"> confrim password:</label>
+                        <input type="password" id="confirm" name="confirm">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="CONTINUE">
+                    </div>
+                </form>
+                <p class="signup">Don’t have an account?<span style="color: #625BF7 "> Sign up</span></p>
+                <p class="error-message" id="errorMessage">All fields are mandatory</p>
+            </div>
+        </div>
+    </div>
+  
+    <script src="jscript.js"></script>
+</body>
+
+</html>
